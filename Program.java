@@ -30,8 +30,6 @@ import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 public class Gui extends JFrame {
-        // two buttons
-	private JButton reg;
 	private JButton custom;
 	
 	//constructor
@@ -39,8 +37,6 @@ public class Gui extends JFrame {
 		super("The title");//adds title to the window
 		setLayout(new FlowLayout());// makes the layout for buttons
 		
-		reg = new JButton("reg Button");//create a button
-		add(reg);// add that button to the screen
 		
 		//insert two images with Icon class
 		Icon b = new ImageIcon(getClass().getResource("redbutton.png"));
@@ -57,7 +53,6 @@ public class Gui extends JFrame {
 		HandlerClass handler = new HandlerClass();// HandlerClass object
 		
 		//adding action listener
-		reg.addActionListener(handler);
 		custom.addActionListener(handler);
 		
 
